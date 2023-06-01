@@ -1,3 +1,5 @@
+'use client'
+
 import Header from "./header"
 import type { ReactNode } from "react"
 import "./styles.css"

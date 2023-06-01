@@ -1,4 +1,5 @@
-"use client"
+'use client'
+
 import styles from "./header.module.css"
 import { signIn, signOut } from "next-auth/react"
 
