@@ -1,15 +1,16 @@
-import NextAuth, { NextAuthOptions } from "next-auth"
-import GithubProvider from "next-auth/providers/github"
+import NextAuth, {NextAuthOptions} from "next-auth"
+import {AdobeProvider} from "../../../app/AdobeProvider";
 
 // For more information on each option (and a full list of options) go to
 // https://next-auth.js.org/configuration/options
 export const authOptions: NextAuthOptions = {
   // https://next-auth.js.org/configuration/providers/oauth
   providers: [
-    GithubProvider({
-      clientId: process.env.GITHUB_ID as string,
-      clientSecret: process.env.GITHUB_SECRET as string,
-    }),
+    AdobeProvider({
+      clientId: process.env.ADOBE_ID as string,
+      clientSecret: process.env.ADOBE_SECRET as string
+
+    })
   ],
 }
 
